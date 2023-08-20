@@ -1,15 +1,22 @@
 # DBMSNotes 
 
+//major purpose of dbms is to provide abstract view of dat to the users
 DB SCHEMEA
-attributes - how u ginna discribe them .
+
+
+attributes - how u gonna discribe them .
 consistency constrane - no coloum = null , no bad or wrong data .
 relationships - bw coloum
 
-//view of data 
-it is 3 scheme archetucture having physical abstraction , logical abstraction and  view point
+//view of data - system store certain details like how the data stored(enable user to access the same data with personalised view) it simplify user interction
+it give the same data to different users with an personalized view 
+it is 3 scheme archetucture having 
+physical abstraction - lower level data abstraction describe how the data stored
+, logical abstraction - describe the design of database at aconceptual level , no need to aware about physical levle 
+ view level - show the user the db in which they are intrested and hide the rest of the data
 
 //im dbms 
-define schema (like student have their student id etc .)
+define schema (overall designing of db is called db scheme)
 
 //interfacing - use to convert like c++ into dbms by Odbc
 
@@ -18,7 +25,7 @@ handle in scheme and physical level .
 
 //DBMS application attribute - 
 clint server
-T1 - clint , server an ddb in the same pc . 
+T1 - clint , server and ddb in the same pc . 
 T2 - clint sent query to server in the different pc by direct calling to the db . interfacing concept is also use
 T3 - clint call to application server which again call to the db and get the result , this enhance the scalability.
 
