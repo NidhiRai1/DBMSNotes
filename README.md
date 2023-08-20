@@ -20,15 +20,16 @@ define schema (overall designing of db is called db scheme)
 
 //interfacing - use to convert like c++ into dbms by Odbc
 
-//DBAdiministrater - it has the central control of all the data . 
+//DBAdiministrater - it has the central control of all the data and program accessed by the daat 
 handle in scheme and physical level .
 
 //DBMS application attribute - 
 clint server
-T1 - clint , server and ddb in the same pc . 
-T2 - clint sent query to server in the different pc by direct calling to the db . interfacing concept is also use
-T3 - clint call to application server which again call to the db and get the result , this enhance the scalability.
+T1 - clint , server and db in the same pc . 
+T2 - clint sent -> query to server in the different pc by direct calling to the db . interfacing concept is also use
+T3 - divided into 3 part ,clint call to -> server which again call to -> db and get the result , this enhance the scalability(www) , security and data integrety.
 
+//data model - collection of conceptual tool for data describing , data relationships and consistancy constrain
 //ER model - entity relations --- student is an entity with their attribute like  name , courses , id etc 
 use to discribe the entity , entity is unique .
 entities - attribute - relations - er diagram(work ae a ablue print)
@@ -43,16 +44,16 @@ derived (eg - age from dom)
 null value (eg no middle value NA )
 
 //degree of relations 
-unery (one entity)
-binary (2 entity participate ) coustomer bororw loan
-terchery 
+unery (one entity participate) eg - employ manges employ
+binary (2 entity participate ) eg - coustomer bororw loan
+terchery (3 entities participate) employee works on job
 
 //relationa; constrane 
 *mapping cardinality - ek entity ke kitne no. of enrirty dusre no. of entity set se connected h
 1. one to one (entity set a ka ek entity entity set B ke ek entity se connected hoga )
    eg citizen has adhar cade.
 2. one to many - a ki entity b ke many entity se connected . eg citizen has car
-3. many to one
+3. many to one - cpurse taken by prof.
 4. many to many eg coustomer and product
 
 *participation constrane(minimum cardinelity)
