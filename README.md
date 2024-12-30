@@ -1,7 +1,38 @@
 # DBMSNotes 
 
-//major purpose of dbms is to provide abstract view of dat to the users
-DB SCHEMEA
+//A Database Management System (DBMS) is software that enables users to efficiently define, create, maintain, and control access to a database. It acts as an interface between the end-users and the database, ensuring data integrity, security, and consistency.
+
+//Advantages of DBMS over File Systems
+1. Data conssitancy and redundncy
+2. INTEGRITY - avoide duplicecy in the databse
+3. security - for e commerce one to user can see each other order history
+4. cunnxurency - multiple use can access the same product together
+5. scalability
+
+//Database Users 
+1. end user - like customer browesing on the amazon websute is the enduser
+2. Data Administrators (DBAs) - Responsible for maintaining the database, ensuring security, backups, and optimization.
+
+//Data model - collection of conceptual tool for data describing , data relationships and consistancy constrain
+1. herarcial model - like sile systenm folder have sunfolder and files
+2. Network model - like inkedin single peron has lots of conncton
+3. Relational model - tebular form
+
+//DBMS application attribute - 
+clint server
+T1 - clint , server and db in the same pc . 
+T2 - clint sent -> query to server in the different pc by direct calling to the db . interfacing concept is also use
+T3 - divided into 3 part ,clint call to -> server which again call to -> db and get the result , this enhance the scalability(www) , security and data integrety.
+
+//SCHEMAS
+1.physical - lower level data abstraction describe how the data stored
+2.logical abstraction - describe the design of database (like tabular etc) , no need to aware about physical levle 
+3.view level - show the user the db in which they are intrested and hide the rest of the data
+
+//Data Independence - the sbility to modify the schema at one level without affevting the other one 
+1. physical Data Independence - affecting this without affecting logical level
+2. logical Data Independence - vose versa
+
 
 
 attributes - how u gonna discribe them .
@@ -11,25 +42,12 @@ relationships - bw coloum
 //view of data - system store certain details like how the data stored(enable user to access the same data with personalised view) it simplify user interction
 it give the same data to different users with an personalized view 
 it is 3 scheme archetucture having 
-physical abstraction - lower level data abstraction describe how the data stored
-, logical abstraction - describe the design of database at aconceptual level , no need to aware about physical levle 
- view level - show the user the db in which they are intrested and hide the rest of the data
 
 //im dbms 
 define schema (overall designing of db is called db scheme)
 
 //interfacing - use to convert like c++ into dbms by Odbc
 
-//DBAdiministrater - it has the central control of all the data and program accessed by the daat 
-handle in scheme and physical level .
-
-//DBMS application attribute - 
-clint server
-T1 - clint , server and db in the same pc . 
-T2 - clint sent -> query to server in the different pc by direct calling to the db . interfacing concept is also use
-T3 - divided into 3 part ,clint call to -> server which again call to -> db and get the result , this enhance the scalability(www) , security and data integrety.
-
-//data model - collection of conceptual tool for data describing , data relationships and consistancy constrain
 //ER model - entity relations --- student is an entity with their attribute like  name , courses , id etc 
 use to discribe the entity , entity is unique .
 entities - attribute - relations - er diagram(work ae a ablue print)
@@ -60,7 +78,7 @@ terchery (3 entities participate) employee works on job
 
 //aggrigation - to show relationship among relationship and it avoid redundency 
 
-//ho wto make ER diagram
+//how to make ER diagram
 identift entity set - attribute of entity set - data type - relationship and constrain (mapping and participation) among entities 
 
 //RELATIONAL MODELA representation in tabular form with unique table nmae ,attribute , tople(row)
@@ -88,7 +106,7 @@ after crud operation their may be inconsistance check it by integraty constrance
 *inset constrain - u won't add value(taple) in child table if it won't be in the parant table .
 *delete constrain - value won't be del from parant table if it's lying in the child table . but you resolve this by putting FK NULL at that tuple which got del from the parant .
 
-//KY CONSTRAIN (define when you are adding that atribute) '
+//KEY CONSTRAIN (define when you are adding that atribute) '
 NOT NULL -(eg - that the nmae attribute won't be null degined initially )
 UNIQUE - that attribute is unique but their is more than one unique attribute entries in th
 DEFAULT 
