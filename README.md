@@ -33,20 +33,10 @@ T3 - divided into 3 part ,clint call to -> server which again call to -> db and 
 1. physical Data Independence - affecting this without affecting logical level
 2. logical Data Independence - vose versa
 
-
-
+ENTITY - 
 attributes - how u gonna discribe them .
 consistency constrane - no coloum = null , no bad or wrong data .
 relationships - bw coloum
-
-//view of data - system store certain details like how the data stored(enable user to access the same data with personalised view) it simplify user interction
-it give the same data to different users with an personalized view 
-it is 3 scheme archetucture having 
-
-//im dbms 
-define schema (overall designing of db is called db scheme)
-
-//interfacing - use to convert like c++ into dbms by Odbc
 
 //ER model - entity relations --- student is an entity with their attribute like  name , courses , id etc 
 use to discribe the entity , entity is unique .
@@ -60,6 +50,14 @@ single valued - (student id )
 multi valued - (g -different [hone nu.)
 derived (eg - age from dom)
 null value (eg no middle value NA )
+
+//Genrelization - it is the process of combining two or more lower-level entities into a higher-level entity.This is use to reduce redundecy . Example car and bus entity become vecheal .
+//Specilization - It is the process of creating sub-entities . example vechile to car and bus .
+//Aggrigation - Aggregation is a higher-level abstraction where a relationship itself is treated as an entity and is linked to another entity. "Department" monitors the relationship between "Professor" and "Course."
+
+
+
+
 
 //degree of relations 
 unery (one entity participate) eg - employ manges employ
@@ -78,7 +76,7 @@ terchery (3 entities participate) employee works on job
 
 //aggrigation - to show relationship among relationship and it avoid redundency 
 
-//how to make ER diagram
+//How to make ER diagram
 identift entity set - attribute of entity set - data type - relationship and constrain (mapping and participation) among entities 
 
 //RELATIONAL MODELA representation in tabular form with unique table nmae ,attribute , tople(row)
